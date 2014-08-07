@@ -12,5 +12,11 @@
       "description": "Bookmark current tab"
     }
   },
+  "permissions": [
+    "tabs",
+    "storage",
+    "*://*.pinboard.in/"
+  ],
+  "options_page": "options.html",
   "manifest_version": 2
 }
