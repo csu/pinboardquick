@@ -1,6 +1,8 @@
 {
   "name": "Pinboard Quick",
   "version": "0.1",
+  "author": "Christopher Su",
+  "homepage_url": "https://github.com/csu/pinboardquick",
   "description": "Quickly bookmark the current tab to Pinboard.",
   "background": {
     "persistent": false,
