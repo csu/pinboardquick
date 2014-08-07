@@ -1,0 +1,16 @@
+{
+  "name": "Pinboard Quick",
+  "version": "0.1",
+  "description": "Quickly bookmark the current tab to Pinboard.",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "bookmark-tab": {
+      "suggested_key": { "default": "Alt+Shift+P" },
+      "description": "Bookmark current tab"
+    }
+  },
+  "manifest_version": 2
+}
