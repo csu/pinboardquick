@@ -1,0 +1,23 @@
+{
+  "name": "pinboardquick",
+  "version": "0.2.0",
+  "description": "pinboardquick =============",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/csu/pinboardquick.git"
+  },
+  "author": "Christopher Su",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/csu/pinboardquick/issues"
+  },
+  "homepage": "https://github.com/csu/pinboardquick",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-zip": "^2.0.1"
+  }
+}
