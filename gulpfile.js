@@ -13,4 +13,3 @@ gulp.task('build', function () {
         .pipe(zip('release.zip'))
         .pipe(gulp.dest('.'));
 });
-
