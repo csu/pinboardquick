@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/csu/pinboardquick",
   "devDependencies": {
-    "gulp": "^3.8.7",
-    "gulp-zip": "^2.0.1"
+    "gulp": "*",
+    "gulp-zip": "*"
+  },
+  "dependencies": {
+    "gulp-zip": "^2.0.2",
+    "gulp": "^3.8.8"
   }
 }
