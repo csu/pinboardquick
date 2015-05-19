@@ -4,7 +4,7 @@ chrome.commands.onCommand.addListener(function(command) {
             chrome.storage.sync.get(["pinboardUsername", "pinboardPassword"], function(items) {
                 if ((typeof items.pinboardUsername != "undefined") && (typeof items.pinboardUsername != "undefined")){
                     var xhr = new XMLHttpRequest();
-                    xhr.open("GET", encodeURI("https://api.pinboard.in/v1/posts/add?url=" + tab.url + "&description=" + tab.title), true);
+                    xhr.open("GET", "https://api.pinboard.in/v1/posts/add?url=" + tab.url + "&description=" + tab.title, true);
                     xhr.setRequestHeader("Authorization", "Basic " + btoa(items.pinboardUsername + ":" + items.pinboardPassword));
                     xhr.send();
                 }
