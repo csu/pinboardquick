@@ -1,9 +1,7 @@
 function save_options() {
-  var username = document.getElementById('pinboardUsername').value;
-  var password = document.getElementById('pinboardPassword').value;
+  var pinboardAuthToken = document.getElementById('authToken').value;
   chrome.storage.sync.set({
-    pinboardUsername: username,
-    pinboardPassword: password
+    authToken: pinboardAuthToken
   }, function() {
     var status = document.getElementById('status');
     status.textContent = 'Options saved.';
@@ -14,10 +12,9 @@ function save_options() {
 }
 
 function restore_options() {
-  chrome.storage.sync.get(["pinboardUsername", "pinboardPassword"], function(items) {
-    if ((typeof items.pinboardUsername != "undefined") && (typeof items.pinboardUsername != "undefined")){
-      document.getElementById('pinboardUsername').value = items.pinboardUsername;
-      document.getElementById('pinboardPassword').value = items.pinboardPassword;
+  chrome.storage.sync.get(["authToken"], function(items) {
+    if ((typeof items.pinboardUsername != "undefined") && (typeof items.authToken != "undefined")) {
+      document.getElementById('authToken').value = items.authToken;
     }
   });
 }

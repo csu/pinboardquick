@@ -1,11 +1,14 @@
 chrome.commands.onCommand.addListener(function(command) {
     if (command == "bookmark-tab") {
         chrome.tabs.getSelected(null, function(tab){
-            chrome.storage.sync.get(["pinboardUsername", "pinboardPassword"], function(items) {
-                if ((typeof items.pinboardUsername != "undefined") && (typeof items.pinboardUsername != "undefined")){
+            chrome.storage.sync.get(["authToken"], function(items) {
+                if ((typeof items.authToken != "undefined") && (typeof items.authToken != "undefined")) {
                     var xhr = new XMLHttpRequest();
-                    xhr.open("GET", "https://api.pinboard.in/v1/posts/add?url=" + encodeURI(tab.url) + "&description=" + encodeURI(tab.title), true);
-                    xhr.setRequestHeader("Authorization", "Basic " + btoa(items.pinboardUsername + ":" + items.pinboardPassword));
+                    var requestUri = "https://api.pinboard.in/v1/posts/add";
+                    requestUri += "?auth_token=" + encodeURI(items.authToken);
+                    requestUri += "&url=" + encodeURI(tab.url);
+                    requestUri += "&description=" + encodeURI(tab.title);
+                    xhr.open("GET", requestUri , true);
                     xhr.send();
                 }
                 else {
