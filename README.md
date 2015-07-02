@@ -4,6 +4,9 @@ pinboardquick
 A Google Chrome extension to bookmark pages to Pinboard without dialogue or pop ups.
 
 ## Installation
+[Get it from the Chrome Web Store.](https://chrome.google.com/webstore/detail/pinboard-quick/eomfpdlldanhekllnbbgodbjlkidoife?hl=en)
+
+Manually install:
 1. `git clone git@github.com:csu/pinboardquick.git`
 2. Open Google Chrome, go to Settings > Extensions.
 3. Drag the cloned folder onto the Google Chrome window to install.
