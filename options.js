@@ -13,7 +13,7 @@ function save_options() {
 
 function restore_options() {
   chrome.storage.sync.get(["authToken"], function(items) {
-    if ((typeof items.pinboardUsername != "undefined") && (typeof items.authToken != "undefined")) {
+    if (typeof items.authToken != "undefined") {
       document.getElementById('authToken').value = items.authToken;
     }
   });
