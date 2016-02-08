@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/csu/pinboardquick/issues"
   },
-  "homepage": "https://github.com/csu/pinboardquick",
+  "homepage": "http://christopher.su",
   "devDependencies": {
     "gulp": "*",
     "gulp-zip": "*"

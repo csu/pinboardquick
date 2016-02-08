@@ -1,8 +1,8 @@
 {
   "name": "Pinboard Quick",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "author": "Christopher Su",
-  "homepage_url": "http://christopher.su/pinboardquick/",
+  "homepage_url": "http://christopher.su",
   "description": "Quickly bookmark the current tab to Pinboard.",
   "background": {
     "persistent": false,
