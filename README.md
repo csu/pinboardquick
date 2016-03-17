@@ -4,6 +4,8 @@ A Google Chrome extension to bookmark pages to Pinboard without dialogue or pop 
 ## Installation
 [Get it from the Chrome Web Store.](https://chrome.google.com/webstore/detail/pinboard-quick/eomfpdlldanhekllnbbgodbjlkidoife?hl=en)
 
+Scroll to the bottom of the extensions page and click on "Keyboard Shortcuts". Set a keyboard shortcut for Pinboard Quick.
+
 ### Manual Installation
 
 1. `git clone git@github.com:csu/pinboardquick.git`
